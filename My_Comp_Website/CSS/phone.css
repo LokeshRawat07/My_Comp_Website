@@ -1,0 +1,78 @@
+/* Navigation bar */
+#navbar{
+    flex-direction: column;
+    /* height: 165px; */
+}
+
+#navbar .items ul li a{
+    font-size: 1.2rem;
+    padding:  10px ;
+} 
+
+/* Home section */
+#home{
+    height: 400px;
+    padding: 2px 8px;
+}
+#home::before{
+    height: 600px;
+}
+
+#home p{
+    font-size: 1.2rem;
+}
+
+#home a{
+    padding: 4px 10px;
+    margin: 0px;
+    font-size: 1.2rem;
+}
+/* Instruct and tips */
+#tips{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Rules and instructions */
+#rules-container{
+    flex-direction: column;
+}
+
+#rules-container #p-img img{
+    height: 300px;
+    width: 450px;
+}   
+#rules-container #p-img {
+    margin: 30px 10px 0px 10px;
+    padding: 0px;
+}   
+#rules-container #rules{
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+/* Contact- section */
+#contact-box form{
+    width: 80%;
+}
+#contact-box #imp-btn{
+    flex-direction: column;
+}
+#contact-box label{
+    font-size: 1.4rem;
+}
+
+
+/* Utility Classes */
+.primary-h{
+    font-size: 1.8rem;
+}
+.secondary-h{
+    font-size: 1.4rem;
+    padding: 10px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 4px 10px;
+    font-size: 1.2rem;
+}
