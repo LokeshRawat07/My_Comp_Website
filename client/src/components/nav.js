@@ -12,8 +12,8 @@ export default function Nav() {
                         <li className="items1 active"><a href="#home">Home</a></li>
                         <li className="items2"><a href="#rules-container">About Comp</a></li>
                         <li className="items3"><a href="#contact">Contact Us</a></li>
-                        <li className="items4"><a href="">Sign In</a></li>
-                        <li className="items5"><a href="">Login</a></li>
+                        <li className="items4"><a href="#home">Sign In</a></li>
+                        <li className="items5"><a href="#home">Login</a></li>
                     </ul>
                 </div>
                 <div id="solo">

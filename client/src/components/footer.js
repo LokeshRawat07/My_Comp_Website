@@ -11,9 +11,9 @@ export default function Footer() {
                     <li>👇🏻 Follow us on instagram 👇🏻</li>
                 </ul>
                 <div id="social-media">
-                    <a className="imp-link link-1" href="https://www.instagram.com/lokeshrawat96/" target="_blank"> Lokesh's
+                    <a className="imp-link link-1" href="https://www.instagram.com/lokeshrawat96/" target="_blank" rel="noreferrer"> Lokesh's
                         insta</a>
-                    <a className="imp-link link-2" href="https://www.instagram.com/that_back.bencher/" target="_blank">
+                    <a className="imp-link link-2" href="https://www.instagram.com/that_back.bencher/" target="_blank" rel="noreferrer">
                         Vaibhav's insta</a>
                 </div>
             </div>

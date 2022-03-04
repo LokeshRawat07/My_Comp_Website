@@ -280,11 +280,15 @@ html {
 
 #contact-box {
   display: flex;
+  padding-bottom: 40px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 40px;
 }
 
+.form-group {
+  width: 50%;
+}
 #contact-box input,
 #contact-box textarea {
   font-family: "Baloo Bhaijaan 2", cursive;
@@ -302,26 +306,19 @@ html {
   font-size: 1.8rem;
   font-family: "Bree Serif", serif;
 }
-
 #contact-box #imp-btn {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-#contact-box #imp-btn input {
   font-family: "Bree Serif", serif;
-  width: 33%;
-  border: 2px solid white;
+  border: 2px solid rgb(0, 0, 0);
+  color: black;
   margin: 10px 10px;
   border-radius: 30px;
   font-size: 1.2rem;
-  padding: 10px 5px;
+  padding: 5px 15px;
   cursor: pointer;
-  color: white;
 }
 #contact-box #imp-btn input:hover {
   color: black;
-  background-color: white;
+  background-color: rgb(174, 174, 174);
 }
 
 #contact-box #imp-btn .btn-1 {
@@ -444,3 +441,89 @@ footer a:hover {
     .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
     .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
 } */
+.progress-btn {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  border-radius: 0.5rem;
+  display: inline-block;
+  background: hsl(183, 100%, 35%);
+  font-family: "RobotoDraft", "Roboto", sans-serif;
+  color: #fff;
+  font-weight: normal;
+  font-size: 20px;
+  transition: all 0.4s ease;
+  margin-top: 2rem;
+}
+.progress-btn:not(.active) {
+  cursor: pointer;
+}
+.progress-btn .contact_btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 50px;
+  text-align: center;
+  z-index: 10;
+  opacity: 1;
+}
+.progress-btn .progress {
+  width: 0%;
+  z-index: 5;
+  background: var(--first-color);
+  opacity: 0;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+.progress-btn.active .progress {
+  opacity: 1;
+  animation: progress-anim 10s ease 0s;
+}
+.progress-btn[data-progress-style="indefinite"].active .progress {
+  animation: progress-indefinite-anim 1s infinite linear 0s;
+}
+.progress-btn[data-progress-style="indefinite"] .progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'50'%20height%3D'100'%20viewBox%3D'0%200%205%2010'%3E%0A%09%3Crect%20width%3D'110%25'%20x%3D'-5%25'%20y%3D'-5%25'%20height%3D'110%25'%20fill%3D'transparent'%2F%3E%0A%09%3Cline%20x1%3D'-2'%20y1%3D'1'%20x2%3D'7'%20y2%3D'10'%20stroke%3D'%2300dae6'%20stroke-width%3D'2'%2F%3E%0A%09%3Cline%20x1%3D'-2'%20y1%3D'6'%20x2%3D'7'%20y2%3D'15'%20stroke%3D'%2300dae6'%20stroke-width%3D'2'%2F%3E%0A%09%3Cline%20x1%3D'-2'%20y1%3D'-4'%20x2%3D'7'%20y2%3D'5'%20stroke%3D'%2300dae6'%20stroke-width%3D'2'%2F%3E%0A%3C%2Fsvg%3E");
+}
+@keyframes progress-anim {
+  0% {
+    width: 0%;
+  }
+  5% {
+    width: 0%;
+  }
+  10% {
+    width: 15%;
+  }
+  30% {
+    width: 40%;
+  }
+  50% {
+    width: 55%;
+  }
+  80% {
+    width: 100%;
+  }
+  95% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes progress-indefinite-anim {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
