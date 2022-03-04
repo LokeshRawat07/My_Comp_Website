@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Contact() {
     return (
         <section id="contact">
@@ -7,19 +5,19 @@ export default function Contact() {
             <div id="contact-box">
                 <form action="">
                     <div className="form-group">
-                        <label for="name">Name:</label>
+                        <label htmlFor="name">Name:</label>
                         <input type="text" id="name" name="name" placeholder="Enter your name" />
                     </div>
                     <div className="form-group">
-                        <label for="email">Email:</label>
+                        <label htmlFor="email">Email:</label>
                         <input type="email" id="email" name="email" placeholder="Enter your email" />
                     </div>
                     <div className="form-group">
-                        <label for="phone no">Phone no:</label>
+                        <label htmlFor="phone no">Phone no:</label>
                         <input type="number" id="phone no" name="phone no" placeholder="Enter your phone no." />
                     </div>
                     <div className="form-group">
-                        <label for="message">Message:</label>
+                        <label htmlFor="message">Message:</label>
                         <textarea name="message" id="message" cols="30" rows="6"
                             placeholder="Enter Your Complaints Here"></textarea>
                     </div>

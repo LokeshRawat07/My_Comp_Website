@@ -1,4 +1,3 @@
-import React from 'react'
 import img from '../images/p20.jpg'
 export default function Rules() {
     return (
